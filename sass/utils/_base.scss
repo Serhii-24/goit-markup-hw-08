@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto';
+  color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  box-sizing: border-box;
+}

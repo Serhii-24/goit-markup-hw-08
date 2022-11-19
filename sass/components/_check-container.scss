@@ -1,0 +1,67 @@
+.check__box {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.check-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.check__label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+.check__frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border:solid 1px $logo-text-color;
+  border-radius: 2px;
+  fill: transparent;
+}
+.check__box:checked + .check__frame {
+  border: none;
+  fill: $primary-bg-color;
+  background-color: $accent-color;
+}
+.check__icon {
+  width: 11px;
+  height: 8px;
+}
+.check__link {
+  color: $accent-color;
+}
+.check__button {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+
+  background-color: $accent-color;
+  color: $primary-bg-color;
+  border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  transition: box-shadow $timing-option;
+  
+  &:hover{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
