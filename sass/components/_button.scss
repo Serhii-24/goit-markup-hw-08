@@ -1,20 +1,34 @@
 .button-container {
 display: flex;
-justify-content: center;
 margin-bottom: 50px;
+flex-wrap: wrap;
+max-width: 329px;
+justify-content: flex-start;
+
+@media screen and(min-width:768px) {
+justify-content: center;
+flex-wrap: nowrap;
+max-width:100%;
+margin-bottom: 30px;
+ }
+ @media screen and(min-width:1200px) {
+  margin-bottom: 50px;
+ }
 }
-.button__list {
+.button__list:not(:last-child) {
   margin-right: 8px;
-}
-.button__list:last-child {
-  margin-right: 0px;
+@media screen and(max-width:767px) {
+    &:nth-child(3n){
+    margin-bottom: 15px;
+  }
+ }
 }
 .button__name {
   font-family: 'Roboto';
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   color: inherit;
   cursor: pointer;

@@ -1,26 +1,41 @@
 .spam {
-  display: inline-block;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+@media screen and(min-width:1200px) {
+   width:auto;
+  }
 }
 .spam__form {
-  display: flex;
+  @media screen and(max-width:1199px) {
+  flex-direction: column;
+  }
   margin-top: 20px;
+@media screen and(min-width:1200px) {
+    display: flex;
+}
 }
 .spam__maill {
-  display: inline-block;
-  width: 358px;
-  height: 50px;
-  padding: 0 16px;
-  margin-right: 12px;
+  width: 100%;
+  padding: 15px 0px 15px 16px;
+  margin-bottom: 20px;
 
   background-color: $primary-color-site;
   border-radius: 4px;
   border: 1px solid $maill-border-color;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: $primary-bg-color;
+  @media screen and(min-width:1200px) {
+    width: 358px;
+    height: 50px;
+    margin: 0 12px 0 0;
+  }
 }
 .spam__button {
-display:flex;
-padding: 0 28px;
+margin-left: auto;
+margin-right: auto;
+padding:10px 31px;
+display: flex;
 
 align-items: center;
 justify-content: center;
@@ -36,6 +51,11 @@ line-height: 1.87;
 letter-spacing: 0.06em;
 transition: box-shadow $timing-option;
 
+@media screen and(min-width:1200px) {
+ width: 200px;
+ height: 50px;
+ padding: 10px 28px;
+}
 &:hover,
 &:focus{
   box-shadow: 0px 4px 4px $box-shadow-color;

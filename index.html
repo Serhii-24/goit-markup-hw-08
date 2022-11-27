@@ -14,12 +14,18 @@
  </head>
 <body>
   <header>
-      <div class="container">
-        <div class="header__container">
+      <!-- <div class="container"> -->
+        <div class="header__container container">
             <div class="logo__box">
               <a class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
             </div>
-            <nav>
+                <button class="menu__button is-open js-open-menu" type="button" aria-expanded="false"
+                 >
+                <svg width="24px" height="24px" aria-label="вмикач мобільного меню">
+                  <use class="icon__menu" href="./images/icon.svg#icon-menu"></use>
+                </svg>
+              </button>
+            <nav class="nav">
               <ul class="site-nav">
                 <li class="site-nav__item"><a href="./index.html" class="site-nav__sellected site-nav__sellected--current">Студія</a></li>
                 <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--active ">Портфоліо</a></li>
@@ -33,7 +39,7 @@
                     <use href="./images/icon.svg#icon-envelope"></use>
                   </svg> info@devstudio.com</a>
               </li>
-              <li class="contacts_list">
+              <li class="contacts__list">
                 <a class="contacts__link" href="tel:+380961111111">
                   <svg class="contacts__icon" width="10px" height="16px">
                     <use href="./images/icon.svg#icon-smartphone"></use>
@@ -58,7 +64,7 @@
       <!--Наші переваги-->  
       <section class="benefits">
          <div class="container">
-         <ul class="benefits__list">
+         <ul class="benefits__list">  
               <li class="benefits__item">
                     <div class="benefits__box">
                       <svg class="benefits__icon" >
@@ -150,7 +156,15 @@
               </h2>
                 <ul class="comand">
                       <li class="comand__list">
-                          <img src="./images/Ihor.jpg" alt="Ihor" width="270">
+                          <picture>
+                            <source srcset="./images/ihor-450.webp 1x, ./images/ihor-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                            <source srcset="./images/ihor-450.jpg 1x, ./images/ihor-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg"/>
+                            <source srcset="./images/ihor-354.webp 1x, ./images/ihor-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                            <source srcset="./images/ihor-354.jpg 1x, ./images/ihor-354@2x.jpg 2x" media="(min-width:768px)" type="image/jpeg"/>
+                            <source srcset="./images/ihor-270.webp 1x, ./images/ihor-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                            <source srcset="./images/ihor-270.jpg 1x, ./images/ihor-270@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg"/>
+                            <img src="./images/ihor-450.jpg" alt="Ihor" />
+                          </picture>
                           <div class="comand__label">
                                  <h3 class="comand__name">
                                 Ігор Дем'яненко
@@ -189,8 +203,16 @@
                           </div>
                       </li>
                       <li class="comand__list">
-                        <img src="./images/Olga.jpg" alt="Olga"  width="270">
-                        <div class="comand__label">
+                          <picture>
+                            <source srcset="./images/olga-450.webp 1x, ./images/olga-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                            <source srcset="./images/olga-450.jpg 1x, ./images/olga-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg"/>
+                            <source srcset="./images/olga-354.webp 1x, ./images/olga-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                            <source srcset="./images/olga-354.jpg 1x, ./images/olga-354@2x.jpg 2x" media="(min-width:768px)" type="image/jpeg"/>
+                            <source srcset="./images/olga-270.webp 1x, ./images/olga-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                            <source srcset="./images/olga-270.jpg 1x, ./images/olga-270@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg"/>
+                              <img src="./images/olga-450.jpg" alt="Olga" />
+                          </picture>
+                         <div class="comand__label">
                             <h3 class="comand__name">
                              Ольга Рєпіна
                             </h3>
@@ -230,7 +252,15 @@
                         </div>
                       </li>
                       <li class="comand__list">
-                        <img src="./images/Mukola.jpg" alt="Mukola"  width="270">
+                        <picture>
+                            <source srcset="./images/mukola-450.webp 1x, ./images/mukola-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                            <source srcset="./images/mukola-450.jpg 1x, ./images/mukola-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg"/>
+                            <source srcset="./images/mukola-354.webp 1x, ./images/mukola-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                            <source srcset="./images/mukola-354.jpg 1x, ./images/mukola-354@2x.jpg 2x" media="(min-width:768px)" type="image/jpeg"/>
+                            <source srcset="./images/mukola-270.webp 1x, ./images/mukola-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                            <source srcset="./images/mukola-270.jpg 1x, ./images/mukola-270@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg"/>
+                              <img src="./images/mukola-450.jpg" alt="Mukola" />
+                          </picture>
                         <div class="comand__label">
                           <h3 class="comand__name">
                           Микола Тарасов
@@ -271,7 +301,15 @@
                         </div>
                       </li>
                       <li class="comand__list">
-                        <img src="./images/Mykhailo.jpg" alt="Mykhailo"  width="270">
+                        <picture>
+                            <source srcset="./images/mukhailo-450.webp 1x, ./images/mukhailo-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                            <source srcset="./images/mukhailo-450.jpg 1x, ./images/mukhailo-450@2x.jpg 2x" media="(max-width:767px)" type="image/jpeg"/>
+                            <source srcset="./images/mukhailo-354.webp 1x, ./images/mukhailo-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                            <source srcset="./images/mukhailo-354.jpg 1x, ./images/mukhailo-354@2x.jpg 2x" media="(min-width:768px)" type="image/jpeg"/>
+                            <source srcset="./images/mukhailo-270.webp 1x, ./images/mukhailo-270@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                            <source srcset="./images/mukhailo-270.jpg 1x, ./images/mukhailo-270@2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg"/>
+                              <img src="./images/mukhailo-450.jpg" alt="Mukhailo" />
+                          </picture>
                         <div class="comand__label">
                            <h3 class="comand__name">
                           Михайло Єрмаков
@@ -369,9 +407,9 @@
           <div class="footer__container">
             <div class="container">
             <div class="footer__box">
-                <address>
+                <address class="address">
                     <a class="logo" href="./index.html">Web<span class="logo__text logo__text--inverse">Studio</span></a>
-                  <div class="address">
+                  <div class="address__box">
                       <ul class="address__list">
                         <li><a class="address__link address__link--inverse" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
                         <li><a class="address__link " href="malto:info@devstudio.com">info@devstudio.com</a></li>
@@ -481,8 +519,45 @@
               </div>
               <button class="check__button" type="submit" >Відправити</button>
             </form>
+              <script src="./js/modal.js"></script> 
+              <script
+                defer
+                src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+                integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+                crossorigin="anonymous">
+              </script>
+              <script defer src="js/mobile-menu.js"></script>
+             </div> 
+        </div>
+          <div class="menu-container js-menu-container">
+            <button type="button" class="menu__close js-close-menu">
+                  <svg width="18.6px" height="18.6px" aria-label="вмикач мобільного меню">
+                    <use class="icon__cross" href="./images/icon.svg#icon-close"></use>
+                  </svg>
+                </button>
+              <div class="menu">
+                <ul>
+                  <li class="menu__list"><a class="menu__nav" href="./index.html">Студія</a></li>
+                  <li class="menu__list"><a class="menu__nav" href="./portfolio.html">Портфоліо</a></li>
+                  <li class="menu__list"><a class="menu__nav" href="./portfolio.html">Контакти</a></li>
+                </ul>  
+                <ul class="menu__box">
+                  <li class="menu__mobile">
+                    <a class="menu__mobile--link" href="tel:+380961111111">+380961111111</a>
+                  </li>
+                  <li class="menu__maill">
+                    <a class="menu__maill--link" href="malto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+                </ul>
+                <ul class="menu-network">
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://www.instagram.com">Instagram</a></li>
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://twitter.com">Twitter</a></li>
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://www.facebook.com">Facebook</a></li>
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://www.linkedin.com">LinkedIn</a></li>
+                </ul>
+              </div>  
           </div>
         </div>
-      <script src="./js/modal.js"></script>  
-     </body>
+      </div>
+    </body>
 </html>

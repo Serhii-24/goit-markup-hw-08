@@ -14,14 +14,20 @@ h4,
 h5,
 h6,
 p,
+
 ul {
   margin: 0px;
   padding: 0px;
 }
-ul {
+ul, a {
   text-decoration: none;
   list-style: none;
 }
 html {
   box-sizing: border-box;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

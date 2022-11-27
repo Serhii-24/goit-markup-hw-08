@@ -14,12 +14,17 @@
   </head>
 <body>
     <header class="underline">
-      <div class="container">
-        <div class="header__container">
+        <div class="container header__container">
           <div class="logo__box">
             <a class="logo" href="./index.html">Web<span class="logo__text">Studio</span></a>
           </div>
-          <nav>
+          <button class="menu__button is-open js-open-menu" type="button" aria-expanded="false"
+                 >
+                <svg width="24px" height="24px" aria-label="вмикач мобільного меню">
+                  <use class="icon__menu" href="./images/icon.svg#icon-menu"></use>
+                </svg>
+              </button>
+          <nav class="nav">
             <ul class="site-nav">
               <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--active">Студія</a></li>
               <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__sellected site-nav__sellected--current">Портфоліо</a></li>
@@ -69,12 +74,20 @@
               <li class="card__list">
                 <a href="#" class="card__img">
                   <div class="card__box">
-                    <img src="./images/web.jpg" alt="Ноутбук, на якому зоображено портфоліо." width="370">
+                    <picture>
+                      <source srcset="./images/laptop-370.jpg 1x, ./images/laptop-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/laptop-370.webp 1x, ./images/laptop-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/laptop-354.jpg 1x, ./images/laptop-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/laptop-354.webp 1x, ./images/laptop-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/laptop-450.jpg 1x, ./images/laptop-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/laptop-450.webp 1x, ./images/laptop-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/laptop-450.jpg" alt="Ноутбук, на якому зоображено портфоліо.">
+                    </picture>
                     <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                   </div>
-                  <div class="card__label">
+                  <div class="card__label--box">
                       <h3 class="card__title">Технокряк</h3>
                       <p class="card__description">Веб-сайт</p>
                   </div>
@@ -83,7 +96,15 @@
               <li class="card__list">
                 <a href="#" class="card__img">
                   <div class="card__box">
-                    <img src="./images/poster.jpg" alt="Два чоловіка грають в баскетбол" width="370">
+                    <picture>
+                      <source srcset="./images/basketboll-370.jpg 1x, ./images/basketboll-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/basketboll-370.webp 1x, ./images/basketboll-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/basketboll-354.jpg 1x, ./images/basketboll-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/basketboll-354.webp 1x, ./images/basketboll-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/basketboll-450.jpg 1x, ./images/basketboll-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/basketboll-450.webp 1x, ./images/basketboll-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/basketboll-450.jpg" alt="Два чоловіка грають в баскетбол">
+                    </picture>
                     <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -97,7 +118,15 @@
               <li class="card__list">
                 <a href="#" class="card__img">
                     <div class="card__box">
-                      <img src="./images/restaurant.jpg" alt="Логотип ресторану в формі риби" width="370">
+                      <picture>
+                      <source srcset="./images/restaurant-label-370.jpg 1x, ./images/restaurant-label-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/restaurant-label-370.webp 1x, ./images/restaurant-label-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/restaurant-label-354.jpg 1x, ./images/restaurant-label-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/restaurant-label-354.webp 1x, ./images/restaurant-label-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/restaurant-label-450.jpg 1x, ./images/restaurant-label-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/restaurant-label-450.webp 1x, ./images/restaurant-label-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/restaurant-label-450.jpg" alt="Логотип ресторану в формі риби">
+                    </picture>
                       <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -111,7 +140,15 @@
               <li class="card__list">
                 <a href="#" class="card__img">
                   <div class="card__box">
-                    <img src="./images/headphones.jpg" alt="Чорні навушники" width="370">
+                    <picture>
+                      <source srcset="./images/airpods-370.jpg 1x, ./images/airpods-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/airpods-370.webp 1x, ./images/airpods-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/airpods-354.jpg 1x, ./images/airpods-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/airpods-354.webp 1x, ./images/airpods-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/airpods-450.jpg 1x, ./images/airpods-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/airpods-450.webp 1x, ./images/airpods-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/airpods-450.jpg" alt="Чорні навушники">
+                    </picture>
                     <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -125,7 +162,15 @@
               <li class="card__list">
                 <a href="#" class="card__img">
                   <div class="card__box">
-                    <img src="./images/boxes.jpg" alt="Дві коробки,біла і коричнева" width="370">
+                    <picture>
+                      <source srcset="./images/boxes-370.jpg 1x, ./images/boxes-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/boxes-370.webp 1x, ./images/boxes-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/boxes-354.jpg 1x, ./images/boxes-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/boxes-354.webp 1x, ./images/boxes-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/boxes-450.jpg 1x, ./images/boxes-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/boxes-450.webp 1x, ./images/boxes-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/boxes-450.jpg" alt="Дві коробки,біла і коричнева">
+                    </picture>
                     <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -139,7 +184,15 @@
               <li class="card__list">
                   <a href="#" class="card__img">
                     <div class="card__box">
-                      <img src="./images/monitor.jpg" alt="Монітор з зоображенням сайту" width="370">
+                      <picture>
+                      <source srcset="./images/monitor-370.jpg 1x, ./images/monitor-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/monitor-370.webp 1x, ./images/monitor-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/monitor-354.jpg 1x, ./images/monitor-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/monitor-354.webp 1x, ./images/monitor-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/monitor-450.jpg 1x, ./images/monitor-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/monitor-450.webp 1x, ./images/monitor-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/monitor-450.jpg" alt="Монітор з зоображенням сайту">
+                    </picture>
                       <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -153,7 +206,15 @@
               <li class="card__list">
                   <a href="#" class="card__img">
                     <div class="card__box">
-                      <img src="./images/book.jpg" alt="Розгорнута книга" width="370">
+                      <picture>
+                      <source srcset="./images/book-370.jpg 1x, ./images/book-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/book-370.webp 1x, ./images/book-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/book-354.jpg 1x, ./images/book-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/book-354.webp 1x, ./images/book-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/book-450.jpg 1x, ./images/book-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/book-450.webp 1x, ./images/book-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/book-450.jpg" alt="Розгорнута книга">
+                    </picture>
                       <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -167,7 +228,15 @@
               <li class="card__list">
                   <a href="#" class="card__img">
                     <div class="card__box">
-                      <img src="./images/label.jpg" alt="Біла етикетка" width="370">
+                      <picture>
+                      <source srcset="./images/label-370.jpg 1x, ./images/label-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/label-370.webp 1x, ./images/label-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/label-354.jpg 1x, ./images/label-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/label-354.webp 1x, ./images/label-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/label-450.jpg 1x, ./images/label-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/label-450.webp 1x, ./images/label-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/label-450.jpg" alt="Біла етикетка">
+                    </picture>
                       <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -181,7 +250,15 @@
               <li class="card__list">
                 <a href="#" class="card__img">
                   <div class="card__box">
-                    <img src="./images/laptop.jpg" alt="Чоловік Працює на Ноутбуці" width="370">
+                    <picture>
+                      <source srcset="./images/business-370.jpg 1x, ./images/business-370@2x.jpg 2x" media="(min-width:1200px)"  type="image/jpeg"/>
+                      <source srcset="./images/business-370.webp 1x, ./images/business-370@2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+                      <source srcset="./images/business-354.jpg 1x, ./images/business-354@2x.jpg 2x" media="(min-width:768px)"  type="image/jpeg"/>
+                      <source srcset="./images/business-354.webp 1x, ./images/business-354@2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+                      <source srcset="./images/business-450.jpg 1x, ./images/business-450@2x.jpg 2x" media="(max-width:767px)"  type="image/jpeg"/>
+                      <source srcset="./images/business-450.webp 1x, ./images/business-450@2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+                      <img src="./images/business-450.jpg" alt="Чоловік Працює на Ноутбуці">
+                    </picture>
                     <div class="card__overlay">
                        <p class="card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
@@ -197,66 +274,102 @@
       </section>  
   </main>
     <footer>
-      <div class="footer__container">
-        <div class="container">
-        <div class="footer__box">
-            <address>
-                <a class="logo" href="./index.html">Web<span class="logo__text logo__text--inverse">Studio</span></a>
-              <div class="address">
-                  <ul class="address__list">
-                    <li><a class="address__link address__link--inverse" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li><a class="address__link " href="malto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="address__link " href="tel:+380961111111">(380)961111111</a></li>
-                  </ul>
+          <div class="footer__container">
+            <div class="container">
+              <div class="footer__box">
+                <address class="address">
+                    <a class="logo" href="./index.html">Web<span class="logo__text logo__text--inverse">Studio</span></a>
+                  <div class="address__box">
+                      <ul class="address__list">
+                        <li><a class="address__link address__link--inverse" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li><a class="address__link " href="malto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="address__link " href="tel:+380961111111">(380)961111111</a></li>
+                      </ul>
+                  </div>
+                </address>
+                <div class="footer-network">
+                  <p class="footer-network__title">Приєднуйтесь</p>
+                    <ul class="footer-network__list" >
+                      <li>
+                        <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
+                          <svg class="footer-network__icon">
+                            <use href="./images/icon.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
+                          <svg class="footer-network__icon">
+                            <use href="./images/icon.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
+                          <svg class="footer-network__icon">
+                            <use href="./images/icon.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
+                          <svg class="footer-network__icon">
+                            <use href="./images/icon.svg#icon-linkedin"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="spam">
+                  <b class="spam__title">Підпишіться на розсилку</b>
+                  <form class="spam__form">
+                      <input type="email" placeholder="E-maill" class="spam__maill">
+                      <button class="spam__button" type="submit">Підписатися
+                        <svg class="spam__icon">
+                          <use href="./images/icon.svg#icon-telegram"></use>
+                        </svg>
+                      </button>
+                  </form>    
+                </div>
+                <script src="./js/modal.js"></script> 
+                <script
+                  defer
+                  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+                  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+                  crossorigin="anonymous">
+                </script>
+                <script defer src="js/mobile-menu.js"></script>
               </div>
-            </address>
-            <div class="footer-network">
-              <p class="footer-network__title">Приєднуйтесь</p>
-                <ul class="footer-network__list" >
-                  <li>
-                    <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
-                      <svg class="footer-network__icon">
-                        <use href="./images/icon.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
+            </div>
+            <div class="menu-container js-menu-container">
+            <button type="button" class="menu__close js-close-menu">
+                  <svg width="18.6px" height="18.6px" aria-label="вмикач мобільного меню">
+                    <use class="icon__cross" href="./images/icon.svg#icon-close"></use>
+                  </svg>
+                </button>
+              <div class="menu">
+                <ul>
+                  <li class="menu__list"><a class="menu__nav" href="./index.html">Студія</a></li>
+                  <li class="menu__list"><a class="menu__nav" href="./portfolio.html">Портфоліо</a></li>
+                  <li class="menu__list"><a class="menu__nav" href="./portfolio.html">Контакти</a></li>
+                </ul>  
+                <ul class="menu__box">
+                  <li class="menu__mobile">
+                    <a class="menu__mobile--link" href="tel:+380961111111">+380961111111</a>
                   </li>
-                  <li>
-                    <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
-                      <svg class="footer-network__icon">
-                        <use href="./images/icon.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
-                      <svg class="footer-network__icon">
-                        <use href="./images/icon.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/"  rel="noopener noreferrer nofollow" class="footer-network__link">
-                      <svg class="footer-network__icon">
-                        <use href="./images/icon.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
+                  <li class="menu__maill">
+                    <a class="menu__maill--link" href="malto:info@devstudio.com">info@devstudio.com</a>
                   </li>
                 </ul>
-            </div>
-            <div class="spam">
-              <b class="spam__title">Підпишіться на розсилку</b>
-              <form class="spam__form">
-                  <input type="email" placeholder="E-maill" class="spam__maill">
-                  <button class="spam__button" type="submit">Підписатися
-                    <svg class="spam__icon">
-                      <use href="./images/icon.svg#icon-telegram"></use>
-                    </svg>
-                  </button>
-              </form>    
-            </div>
-        </div>
-        </div>
-      </div>
-    </footer>
+                <ul class="menu-network">
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://www.instagram.com">Instagram</a></li>
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://twitter.com">Twitter</a></li>
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://www.facebook.com">Facebook</a></li>
+                  <li class="menu-network__list"><a class="menu-network__link" href="https://www.linkedin.com">LinkedIn</a></li>
+                </ul>
+              </div>  
+          </div>
+          </div>
+        </footer>
   </body>
 </html>

@@ -8,8 +8,17 @@ letter-spacing: 0.03em;
 text-decoration: none;
 
 color: $accent-color;
+
+@media screen and(min-width:1200px) {
+  font-size: 24px;
+  line-height: 1.16;
 }
-.address {
+}
+.address{
+  margin-left:auto;
+  margin-right: auto;
+}
+.address__box {
 margin-top: 20px;
 }
 .footer__icon {
@@ -18,12 +27,27 @@ color: $primary-bg-color;
 .footer-network__list {
 display: flex;
 align-items: center;
-justify-content: space-between;
+gap:10px;
 }
 .footer__box {
-display: flex;
-align-items: baseline;
-justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+@media screen and(max-width:767px) {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  }
+@media screen and(min-width:768px) {
+  flex-wrap: wrap;
+  align-items: baseline;
+  text-align: center;
+}  
+@media screen and(min-width:1200px) {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  text-align: left;
+}
 }
 .footer-network__link {
 display: flex;
@@ -31,9 +55,10 @@ align-items: center;
 justify-content: center;
 width: 44px;
 height: 44px;
-background-color: $bg-color;
+
 background-size: 100%;
 border-radius: 50%;
+background-color: $bg-color;
 transition: background-color $timing-option;
 
 &:hover {
@@ -52,9 +77,13 @@ height: 20px;
 fill: $primary-bg-color;
 }
 .footer-network {
-display: inline-block;
-width: 206px;
-height: 80px;
+margin-left: auto;
+margin-right: auto;
+padding: 60px 0;
+
+@media screen and(min-width:768px) {
+  padding: 0;
+}
 }
 .footer-network__title   {
 font-weight: 700;
@@ -66,30 +95,30 @@ color: $primary-bg-color;
 margin-bottom: 20px;
 }
 .footer__container {
-display: flex;
-background-color: $primary-color-site;
-margin: 0 auto;
-padding: 60px 0px;
+  background-color: $primary-color-site;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0px;
 }
 .address-conteiner {
-display: block;
-width: 231px;
-height: 81px;
+  display: block;
+  width: 231px;
+  height: 81px;
 }
 .address__list {
-display: flex;
-flex-direction: column;
-gap: 9px;
-text-decoration: none;
-font-style: normal;
-font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 .address__link {
-text-decoration: none;
-color: $secondary-bg-color;
-transition: color $timing-option;
+  text-decoration: none;
+  color: $secondary-bg-color;
+  transition: color $timing-option;
 
 &:hover{
 color: $accent-color;}
@@ -98,7 +127,7 @@ color: $accent-color;}
   transition: color $timing-option;}
 }
 .address__link--inverse {
-text-decoration: none;
-color: $primary-bg-color;
-transition: color $timing-option;
+  text-decoration: none;
+  color: $primary-bg-color;
+  transition: color $timing-option;
 }
