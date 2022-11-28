@@ -8,34 +8,34 @@ background-position:center;
 text-align: center;
 padding: 118px 0;
 background-image:$gradient,
-url("../../images/hero-480.jpg");
+url("../images/hero-480.jpg");
 background-color: $bgc-silver;
 background-size:cover;
 background-repeat: no-repeat;
 
 @media screen and(min-width:480px), (min-resolution:2dppx){
   background-image:$gradient,
-  url("../../images/hero-480@2x.jpg");
+  url("../images/hero-480@2x.jpg");
   }
 @media screen and(min-width:768px){
     max-width: 760px;
     background-image:$gradient,
-    url("../../images/hero-768.jpg");
+    url("../images/hero-768.jpg");
   }
 @media screen and(min-resolution:2dppx) {
     background-image:$gradient,
-    url("../../images/hero-768@2x.jpg");
+    url("../images/hero-768@2x.jpg");
     }
 @media screen and(min-width:1200px) {
   max-width: 1600px;
   height: 600px;
   padding: 200px 0;
   background-image: $gradient,
-  url("../../images/hero-1200.jpg");
+  url("../images/hero-1200.jpg");
   }
 @media screen and(min-resolution:2dppx) {
   background-image:$gradient,
-  url("../../images/hero-1200@2x.jpg");
+  url("../images/hero-1200@2x.jpg");
 }
 }
 .hero__title{
