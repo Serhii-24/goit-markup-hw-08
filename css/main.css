@@ -613,11 +613,6 @@ img {
   }
 }
 
-.address {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .address__box {
   margin-top: 20px;
 }
@@ -717,14 +712,31 @@ img {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .address {
+    margin-left: 76px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    margin: 0;
+  }
+}
+
 .footer-network {
-  margin-left: auto;
-  margin-right: auto;
   padding: 60px 0;
 }
 @media screen and (min-width: 768px) {
   .footer-network {
     padding: 0;
+    margin-right: 89px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-network {
+    margin-left: 70px;
+    margin-right: 0;
   }
 }
 
@@ -1351,13 +1363,12 @@ header {
 }
 
 .spam {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .spam {
-    width: auto;
+    margin: 0;
   }
 }
 
@@ -1381,7 +1392,7 @@ header {
 }
 
 .spam__maill {
-  width: 100%;
+  width: 450px;
   padding: 15px 0px 15px 16px;
   margin-bottom: 20px;
   background-color: #2F303A;

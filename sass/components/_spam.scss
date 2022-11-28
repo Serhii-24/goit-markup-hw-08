@@ -1,9 +1,8 @@
 .spam {
-width: 100%;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 @media screen and(min-width:1200px) {
-   width:auto;
+  margin: 0;
   }
 }
 .spam__form {
@@ -16,7 +15,7 @@ margin-right: auto;
 }
 }
 .spam__maill {
-  width: 100%;
+  width: 450px;
   padding: 15px 0px 15px 16px;
   margin-bottom: 20px;
 
