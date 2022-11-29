@@ -521,6 +521,15 @@ img {
     margin-top: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    margin: -15px;
+    margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .clients__logo {
@@ -538,6 +547,12 @@ img {
   .clients__logo {
     width: calc((100% - 180px) / 6);
     margin: 15px;
+  }
+  .clients__logo:first-child {
+    margin-left: 0;
+  }
+  .clients__logo:last-child {
+    margin-right: 0;
   }
 }
 
