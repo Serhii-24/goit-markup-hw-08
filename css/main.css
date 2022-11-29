@@ -1,8 +1,8 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -36,6 +36,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+form {
+  display: block;
 }
 
 .comand, .card-set, .benefits__list {
@@ -1377,13 +1381,16 @@ header {
   border-right: 2px solid rgba(33, 33, 33, 0.2);
 }
 
-.spam {
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (max-width: 1199px) {
+  .spam {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .spam {
-    margin: 0;
+    margin-left: 93px;
   }
 }
 
@@ -1396,6 +1403,12 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1407,7 +1420,7 @@ header {
 }
 
 .spam__maill {
-  width: 450px;
+  width: 100%;
   padding: 15px 0px 15px 16px;
   margin-bottom: 20px;
   background-color: #2F303A;
@@ -1416,6 +1429,11 @@ header {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .spam__maill {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .spam__maill {
@@ -1457,6 +1475,7 @@ header {
     width: 200px;
     height: 50px;
     padding: 10px 28px;
+    margin: 0;
   }
 }
 .spam__button:hover, .spam__button:focus {
